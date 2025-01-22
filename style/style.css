@@ -32,9 +32,13 @@
   border: none;
   border-radius: 12px;
 }
-main{
+
+ main{
   max-width: 1440px;
   margin: 0 auto;
+ }
+.white{
+  background-color: #F2E8FF;
 }
 /* navbar-style */
 .navbar{
@@ -214,6 +218,105 @@ main{
 .arrow-btn span{
   font-size: 25px;
 }
+/* our-story-style */
+.our-story{
+
+}
+.our-story-container{
+  
+  background-image: url(../assets/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 50px 0;
+}
+.our-story-content{
+ 
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 20px;
+  
+ 
+}
+#our-story-items-1{
+  grid-row: span 3;
+  grid-column: span 2;
+   
+}
+.our-story-items{
+
+  border-radius: 15px;
+
+}
+.our-story-items img{
+  border-radius: 15px 15px 0  0; 
+  width: 100%;
+}
+.content{
+  background-color: #dccbcb;
+
+  padding: 30px;
+}
+/* footer-style */
+.footer-container{
+  background-color: #01acfd;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  width: 1440px;
+  margin: 0 auto;
+  
+}
+.footer-items{
+  
+  padding: 20px;
+}
+.footer-kid{
+  justify-content:space-between;
+  align-items: center;
+
+}
+.footer-kit-title{
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-family: quicksand;
+  color: white;
+}
+.footer-description{
+   font-size: 1.25rem;
+   font-family: quicksand;
+   font-weight: 400;
+   color: white;
+   padding-top: 40px;
+}
+.footer-items-title{
+  font-size: 1.5rem;
+  font-family: quicksand;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 25px;
+}
+.footer-items ul{
+ list-style: none; 
+ color: white; 
+ font-size: 1.25rem;
+ font-family: quicksand;
+ font-weight: 500;
+ gap: 10px;
+}
+.list{
+  
+  padding-bottom: 20px;
+}
+.footer-icon {
+  padding-top: 10px;
+}
+
 
 @media screen and (max-width:576px) {
    .brand , .nav-link , .nav-btn{
@@ -242,11 +345,14 @@ main{
    .curriculum-title{
     display: none;
    }
-   .curriculum-container{
+   .curriculum-container , .footer-content{
     flex-direction: column;
    }
    .arrow-buttons{
     display: none;
+   }
+   .footer-kit-title{
+    
    }
 }
 @media screen and (min-width:576px) and (max-width:992px) {
